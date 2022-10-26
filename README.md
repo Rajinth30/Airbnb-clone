@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+This project is hosted in https://airbnb-clone-3a0gi0kk9-rajinth30.vercel.app/
+
 First, run the development server:
 
 ```bash
