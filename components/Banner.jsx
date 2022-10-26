@@ -9,6 +9,7 @@ function Banner() {
         layout="fill"
         fill
         sizes="100vw 100vh"
+        alt='image'
         
       />
       <div className="absolute top-[40%] w-full text-center">

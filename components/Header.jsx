@@ -59,6 +59,7 @@ function Header({ placeholder }) {
           // objectPosition="left"
           width={100}
           height={40}
+          alt='image'
         />
       </div>
 

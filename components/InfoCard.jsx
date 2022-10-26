@@ -9,7 +9,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
     duration-200 ease-out first:border-t hover:opacity-80 hover:shadow-lg pr-4"
     >
       <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0 ">
-        <Image src={img} className="rounded-xl" fill />
+        <Image src={img} className="rounded-xl" fill alt='image'/>
       </div>
       <div className="flex flex-grow flex-col pl-5">
         <div className="flex justify-between">

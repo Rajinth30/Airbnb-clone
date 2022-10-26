@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { useRouter } from "next/dist/client/router";
+
 import format from "date-fns/parseISO";
 import InfoCard from "../components/InfoCard";
-
+import { useRouter } from "next/router";
 
 function search({ searchResults }) {
   const router = useRouter();
@@ -17,9 +17,7 @@ function search({ searchResults }) {
       <Header placeholder={`${location} `} />
       <main className="flex">
         <section className="flex-grow px-6 pt-14 ">
-          <p className="text-sm">
-            Greate Place to Stay
-          </p>
+          <p className="text-sm">Greate Place to Stay</p>
           <h1 className="mt-2 mb-6 text-3xl font-semibold">
             Stays in {location}
           </h1>

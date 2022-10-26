@@ -7,7 +7,7 @@ function MediumCard({ img, title }) {
       <div className="relative h-80 w-80">
         <Image
           src={img}
-          
+          alt="image"
           className="rounded-xl"
           fill
           sizes="100vw 100vh"
