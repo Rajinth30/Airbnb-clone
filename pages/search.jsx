@@ -5,7 +5,7 @@ import format from "date-fns/parseISO";
 import InfoCard from "../components/InfoCard";
 import { useRouter } from "next/dist/client/router";
 
-function search({ searchResults }) {
+const search = ({ searchResults }) => {
   const router = useRouter();
   const { location, startDate, endDate, noOfGuests } = router.query;
   const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
@@ -44,12 +44,11 @@ function search({ searchResults }) {
             )}
           </div>
         </section>
-        
       </main>
       <Footer />
     </div>
   );
-}
+};
 
 export default search;
 
