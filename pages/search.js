@@ -5,7 +5,7 @@ import format from "date-fns/parseISO";
 import InfoCard from "../components/InfoCard";
 import { useRouter } from "next/dist/client/router";
 
-const search = ({ searchResults }) => {
+function Search ({ searchResults })  {
   const router = useRouter();
   const { location, startDate, endDate, noOfGuests } = router.query;
   const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
@@ -50,7 +50,7 @@ const search = ({ searchResults }) => {
   );
 };
 
-export default search;
+export default Search;
 
 export async function getServerSideProps() {
   const searchResults = await fetch("https://www.jsonkeeper.com/b/5NPS").then(
