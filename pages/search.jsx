@@ -1,10 +1,9 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
 import format from "date-fns/parseISO";
 import InfoCard from "../components/InfoCard";
-import { useRouter } from "next/router";
+import { useRouter } from "next/dist/client/router";
 
 function search({ searchResults }) {
   const router = useRouter();
@@ -45,9 +44,7 @@ function search({ searchResults }) {
             )}
           </div>
         </section>
-        {/* <section className="hidden xl:inline-flex min-w-[600px] border-l-2 border-gray-300">
-          <Map searchResults={searchResults} />
-        </section> */}
+        
       </main>
       <Footer />
     </div>
